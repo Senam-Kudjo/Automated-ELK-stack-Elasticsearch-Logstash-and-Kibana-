@@ -99,7 +99,7 @@ then
         sed -i "s/api.http.host: 127.0.0.1/api.http.host: $ServerIP/" /etc/logstash/logstash.yml
         systemctl enable logstash
         systemctl start logstash
-        echo -e "${GREEN} Logstash Installed Successfuly (2/4)${NC}"
+        echo -e "${GREEN} Logstash Installed Successfuly (3/4)${NC}"
 else
         echo "Logstash Already Installed but might be Inactive"
 fi
@@ -123,7 +123,7 @@ then
         sudo systemctl daemon-reload
         sudo systemctl enable kibana.service
         sudo systemctl start kibana
-        echo -e "${GREEN} Kibana Installed Successfuly (2/4)${NC}"
+        echo -e "${GREEN} Kibana Installed Successfuly (4/4)${NC}"
 else
         echo "Kibana Already Installed but might be Inactive"
 fi
